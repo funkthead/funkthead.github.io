@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'Goudy Heavyface Std';
+    src: url('GoudyStd-Heavyface.woff2') format('woff2'),
+        url('GoudyStd-Heavyface.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
