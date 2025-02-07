@@ -8,3 +8,11 @@
     font-display: swap;
 }
 
+h1 {
+  transition: font-size 0.3s ease;
+  font-size:10vw;
+}
+
+h1:hover {
+  font-size: 11vw; 
+}
