@@ -50,7 +50,7 @@ html, body {
   padding: 0.3em 0.6em;
 }
 
-.overlay a:hover {
+a:hover {
   text-decoration: underline;
 }
 
@@ -84,4 +84,32 @@ html, body {
     padding: 0;
     margin: 0 0 0.6em;
     font-size: 1em;        
+}
+
+@font-face {
+    font-family: 'Goudy Heavyface Std';
+    src: url('GoudyStd-Heavyface.woff2') format('woff2'),
+        url('GoudyStd-Heavyface.woff') format('woff'),
+        url ('Goudy Heavyface Std Regular.otf') format('otf');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+.desc {
+    font-size:1em;
+    width: 40vw;
+    border: 2px solid black;
+    padding: 1em 1em 0;
+    margin: 2em auto;
+    white-space: pre-wrap;
+    text-align: center;
+    font-family: serif;
+}
+
+.links {
+    display:flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 2em;
 }
