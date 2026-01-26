@@ -98,7 +98,8 @@ a:hover {
 
 .desc {
     font-size:1em;
-    width: 40vw;
+    max-width: 21cm;
+    width: 80vw;
     border: 2px solid black;
     padding: 1em 1em 0;
     margin: 2em auto;
