@@ -7,9 +7,9 @@
   <meta charset="utf-8">
   <title>Monte Hills</title>
   <meta name="description" content="Monte Hills Is a producer of sounds And music you have never even heard before potentially ever.">
-</head>
-<body>
   <script src="javascript.js"></script>
+</head>
+<body onload="generateSquares()">
 
   <form onchange="generateSquares()">
       <div><input type="checkbox" id="albums" name="albums" onchange="toggleAlbums()" checked/>
@@ -29,6 +29,12 @@
 
       <div><input type="checkbox" id="remixes" name="remixes" onchange="toggleRemixes()" checked/>
       <label for="remixes">remixes</label></div>
+
+      <div><input type="checkbox" id="djmixes" name="djmixes" onchange="toggleDJmixes()" checked/>
+      <label for="djmixes">DJ mixes</label></div>
+
+      <div><input type="checkbox" id="livesets" name="livesets" onchange="toggleLiveSets()" checked/>
+      <label for="livesets">live sets</label></div>
   </form>
 
   <div class="grid" >
@@ -47,6 +53,32 @@
       </div>
     </div>
 
+    <div class="square djmix">
+      <img src="images/skylive25.jpg" alt="Monte Hills LIVE @ Skylive '25 (08/08/25)">
+      <div class="overlay">
+        <p class="name">Monte Hills LIVE @ Skylive '25 (08/08/25)</p>
+        <p class="type">[DJ mix]</p>      
+        <a href="https://youtu.be/3Mtw_ExI3fs">youtube</a>
+        <p class="info">
+            <span>2025</span>
+            <span>self-released</span>
+        </p>
+      </div>
+    </div>
+
+    <div class="square liveset">
+      <img src="images/bfabw.jpg" alt="Beats for a Broken World (20/07/25)">
+      <div class="overlay">
+        <p class="name">Beats for a Broken World (20/07/25)</p>
+        <p class="type">[live set]</p>      
+        <a href="https://youtu.be/pbW_4qDgjSk">youtube</a>
+        <p class="info">
+            <span>2025</span>
+            <span>self-released</span>
+        </p>
+      </div>
+    </div>
+
     <div class="square EP" >
       <img src="images/montehills2.jpg" alt="monte Hills2">
       <div class="overlay">
@@ -58,6 +90,32 @@
         <p class="info">
             <span>2025</span>
             <span>Skyline Tapes</span>
+        </p>
+      </div>
+    </div>
+
+    <div class="square djmix">
+      <img src="images/birthdaymix2k24.jpg" alt="Birthday Mix 2K24">
+      <div class="overlay">
+        <p class="name">Birthday Mix 2K24</p>
+        <p class="type">[DJ mix]</p>      
+        <a href="https://youtu.be/Y1mC9-DGrzc">youtube</a>
+        <p class="info">
+            <span>2024</span>
+            <span>self-released</span>
+        </p>
+      </div>
+    </div>
+
+    <div class="square djmix" data-date="2024-10-11">
+      <img src="images/thatonefest.jpg" alt="Monte Hills LIVE @ That One Fest (11/10/24)">
+      <div class="overlay">
+        <p class="name">Monte Hills LIVE @ That One Fest (11/10/24)</p>
+        <p class="type">[DJ mix]</p>      
+        <a href="https://youtu.be/ohWpCD5Vub0">youtube</a>
+        <p class="info">
+            <span>2024</span>
+            <span>self-released</span>
         </p>
       </div>
     </div>
@@ -87,6 +145,19 @@
         <p class="info">
             <span>2024</span>
             <span>OMEAC</span>
+        </p>
+      </div>
+    </div>
+
+    <div class="square djmix">
+      <img src="images/skylive24.jpg" alt="Monte Hills LIVE @ Skylive '24 (16/06/24)">
+      <div class="overlay">
+        <p class="name">Monte Hills LIVE @ Skylive '24 (16/06/24)</p>
+        <p class="type">[DJ mix]</p>      
+        <a href="https://youtu.be/m_6KiPQgd5s">youtube</a>
+        <p class="info">
+            <span>2024</span>
+            <span>self-released</span>
         </p>
       </div>
     </div>
@@ -141,15 +212,28 @@
       <div class="overlay">
         <p class="name">Vane Lily - Paparazzi Murder Party (Monte Hills Remix)</p>
         <p class="type">[remix]</p>
-        <a href="https://youtu.be/_78qWCT96Mc">youtube</a>
         <a href="https://montehills.bandcamp.com/album/paparazzi-murder-party-monte-hills-remix">bandcamp</a>
+        <a href="https://youtu.be/_78qWCT96Mc">youtube</a>
         <a href="https://open.spotify.com/album/0X1XsFFNbtGxHCZiXB9cTR?si=D1cFKGxxTkGuHRMEDVibtg">spotify</a>
         <p class="info">
             <span>2023</span>
             <span>self-released</span>
         </p>
       </div>
-    </div>    
+    </div>
+    
+    <div class="square djmix">
+      <img src="images/skylive23.jpg" alt="Monte Hills LIVE @ Skylive '23 (10/06/23)">
+      <div class="overlay">
+        <p class="name">Monte Hills LIVE @ Skylive '23 (10/06/23)</p>
+        <p class="type">[DJ mix]</p>      
+        <a href="https://youtu.be/L9Aqmq4Huu4">youtube</a>
+        <p class="info">
+            <span>2023</span>
+            <span>self-released</span>
+        </p>
+      </div>
+    </div>
     
     <!-- <div class="square">
       <img src="placeholder" alt="Kentucky Man Gets Remixed by Monte Hills">
@@ -268,6 +352,7 @@
         <a href="https://open.spotify.com/artist/2uyspNgs3aa2eGr7H1Q8HV?si=vRnGUDWsT2Spop5xpVY6Eg">spotify</a>
         <a href="https://music.apple.com/artist/monte-hills/1565709028">apple music</a>
       </div>
+      
 </div>
 </body>
 </html>

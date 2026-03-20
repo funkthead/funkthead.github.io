@@ -52,6 +52,24 @@ function toggleRemixes() {
     classes.forEach((element) => { element.classList.add('hidden');}); }
 }
 
+function toggleDJmixes() {
+    const checkbox = document.getElementById('djmixes');
+    const classes = document.querySelectorAll('.djmix');
+  if (checkbox.checked) {
+    classes.forEach((element) => { element.classList.remove('hidden');});
+  } else {
+    classes.forEach((element) => { element.classList.add('hidden');}); }
+}
+
+function toggleLiveSets() {
+    const checkbox = document.getElementById('livesets');
+    const classes = document.querySelectorAll('.liveset');
+  if (checkbox.checked) {
+    classes.forEach((element) => { element.classList.remove('hidden');});
+  } else {
+    classes.forEach((element) => { element.classList.add('hidden');}); }
+}
+
 function generateSquares() {
     const empties = document.querySelectorAll('.square.empty');
     empties.forEach(el => el.remove());
