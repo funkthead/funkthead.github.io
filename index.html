@@ -9,15 +9,36 @@
   <meta name="description" content="Monte Hills Is a producer of sounds And music you have never even heard before potentially ever.">
 </head>
 <body>
-  
-  <div class="grid">
-    <div class="square">
+  <script src="javascript.js"></script>
+
+  <form onchange="generateSquares()">
+      <div><input type="checkbox" id="albums" name="albums" onchange="toggleAlbums()" checked/>
+      <label for="albums">albums</label></div>
+
+      <div><input type="checkbox" id="EPs" name="EPs" onchange="toggleEPs()" checked/>
+      <label for="EPs">EPs</label></div>
+
+      <div><input type="checkbox" id="compilations" name="compilations" onchange="toggleCompilations()" checked/>
+      <label for="compilations">compilations</label></div>
+
+      <div><input type="checkbox" id="collabs" name="collabs" onchange="toggleCollabs()" checked/>
+      <label for="collabs">collabs</label></div>
+
+      <div><input type="checkbox" id="singles" name="singles" onchange="toggleSingles()" checked/>
+      <label for="singles">singles</label></div>
+
+      <div><input type="checkbox" id="remixes" name="remixes" onchange="toggleRemixes()" checked/>
+      <label for="remixes">remixes</label></div>
+  </form>
+
+  <div class="grid" >
+    <div class="square album">
       <img src="images/kabalbum.jpg" alt="Kayleigh. A Blossom Album">
       <div class="overlay">
         <p class="name">Kayleigh A. Blossom Album</p>
         <p class="type">[album]</p>
-        <a href="https://www.youtube.com/watch?v=XBgGJSJopSA">youtube</a>
         <a href="https://montehills.bandcamp.com/album/kayleigh-a-blossom-album">bandcamp</a>
+        <a href="https://www.youtube.com/watch?v=XBgGJSJopSA">youtube</a>
         <a href="https://open.spotify.com/album/2AD0aBXaceAx2F75cJuP5o?si=YWT7bJjAQgOtyyz9Tx2Oyg">spotify</a>
         <p class="info">
             <span>2026</span>
@@ -26,13 +47,13 @@
       </div>
     </div>
 
-    <div class="square">
+    <div class="square EP" >
       <img src="images/montehills2.jpg" alt="monte Hills2">
       <div class="overlay">
         <p class="name">monte Hills2</p>
         <p class="type">[EP]</p>
-        <a href="www.youtube.com/watch?v=xrvkbwFtH_E">youtube</a>
         <a href="https://montehills.bandcamp.com/album/monte-hills2">bandcamp</a>
+        <a href="www.youtube.com/watch?v=xrvkbwFtH_E">youtube</a>
         <a href="https://open.spotify.com/album/3p8E7f1jIC4V9Z76iyBDWq?si=WFV-tlYcSfG1izIEuRMqFw">spotify</a>
         <p class="info">
             <span>2025</span>
@@ -41,7 +62,7 @@
       </div>
     </div>
 
-    <div class="square">
+    <div class="square compilation">
       <img src="images/intmhwds.jpg" alt="International Monte Hills Week (Deleted Scenes)">
       <div class="overlay">
         <p class="name">International Monte Hills Week (Deleted Scenes)</p>
@@ -55,13 +76,13 @@
       </div>
     </div>
 
-    <div class="square">
+    <div class="square EP collab">
       <img src="images/yanlt.jpg" alt="You Are Now Listening To...">
       <div class="overlay">
         <p class="name">Morning End - You Are Now Listening To...</p>
         <p class="type">[EP]</p>
+        <a href="https://morningend.bandcamp.com/album/you-are-now-listening-to">bandcamp</a>        
         <a href="https://youtu.be/C3MLYuXa7TE">youtube</a>
-        <a href="https://morningend.bandcamp.com/album/you-are-now-listening-to">bandcamp</a>
         <a href="https://open.spotify.com/album/4CHrGKCAt4WPAi4z5uMO51?si=bVrZiG4cTMu-5JvTpJll6Q">spotify</a>
         <p class="info">
             <span>2024</span>
@@ -70,13 +91,13 @@
       </div>
     </div>
 
-    <div class="square">
+    <div class="square compilation remix">
       <img src="images/rbevol1.jpg" alt="Remixes, Bootlegs & Edits Vol. 1">
       <div class="overlay">
         <p class="name">Remixes, Bootlegs & Edits Vol. 1</p>
         <p class="type">[compilation]</p>
-        <a href="https://youtu.be/aWOa7o2T7co">youtube</a>
         <a href="https://montehills.bandcamp.com/album/remixes-bootlegs-edits-vol-1">bandcamp</a>
+        <a href="https://youtu.be/aWOa7o2T7co">youtube</a>
         <a href="https://open.spotify.com/album/5RCbLM3fhRu1Rr8m6QkWnw?si=TuuP4hPjRC6QbVx8MHx0bA">spotify</a>
         <p class="info">
             <span>2024</span>
@@ -85,13 +106,13 @@
       </div>
     </div>
 
-    <div class="square">
+    <div class="square album">
       <img src="images/intmhw.jpg" alt="International Monte Hills Week">
       <div class="overlay">
         <p class="name">International Monte Hills Week</p>
         <p class="type">[album]</p>
-        <a href="https://youtu.be/PPCgBDsGWtk">youtube</a>
         <a href="https://montehills.bandcamp.com/album/international-monte-hills-week">bandcamp</a>
+        <a href="https://youtu.be/PPCgBDsGWtk">youtube</a>
         <a href="https://open.spotify.com/album/0l9ucwBs7DqhIerBIFoklf?si=DW5EXXLxRxKBhq21EF1qXw">spotify</a>
         <p class="info">
             <span>2023</span>
@@ -100,13 +121,13 @@
       </div>
     </div>
 
-    <div class="square">
+    <div class="square single">
       <img src="images/lookgood.jpg" alt="LOOK_GOOD">
       <div class="overlay">
         <p class="name">LOOK_GOOD (feat. Artemis Morte)</p>
         <p class="type">[single]</p>
-        <a href="https://youtu.be/k5LZfD5rLBI">youtube</a>
         <a href="https://montehills.bandcamp.com/album/look-good-feat-artemis-morte">bandcamp</a>
+        <a href="https://youtu.be/k5LZfD5rLBI">youtube</a>
         <a href="https://open.spotify.com/album/4jXuyCdxuQaJBSevlz16wm?si=2cU8p4UWSGOhWnEBDKDcug">spotify</a>
         <p class="info">
             <span>2023</span>
@@ -115,7 +136,7 @@
       </div>
     </div>    
 
-    <div class="square">
+    <div class="square single remix">
       <img src="images/pmpmhrmx.jpg" alt="Paparazzi Murder Party (Monte Hills Remix)">
       <div class="overlay">
         <p class="name">Vane Lily - Paparazzi Murder Party (Monte Hills Remix)</p>
@@ -142,13 +163,13 @@
       </div>
     </div> --> 
 
-    <div class="square">
+    <div class="square single remix">
       <img src="images/rbbmhrmx.jpg" alt="Reckless Battery Burns (Monte Hills Remix)">
       <div class="overlay">
         <p class="name">GHOST & Vane Lily - Reckless Battery Burns (Monte Hills Remix)</p>
         <p class="type">[remix]</p>
-        <a href="https://youtu.be/si6YOWOwEJs">youtube</a>
         <a href="https://montehills.bandcamp.com/album/reckless-battery-burns-monte-hills-remix">bandcamp</a>
+        <a href="https://youtu.be/si6YOWOwEJs">youtube</a>
         <a href="https://open.spotify.com/album/7a46mRFvgMxLBCIXu79hj2?si=-ALFHlRxRQ-_FUyC9rRUlA">spotify</a>
         <p class="info">
             <span>2022</span>
@@ -157,7 +178,7 @@
       </div>
     </div>
 
-    <div class="square">
+    <div class="square single">
       <img src="images/gottaget.jpg" alt="Gotta Get">
       <div class="overlay">
         <p class="name">Gotta Get</p>
@@ -171,13 +192,13 @@
       </div>
     </div>
 
-    <div class="square">
+    <div class="square EP">
       <img src="images/chrome.jpg" alt="Chrome">
       <div class="overlay">
         <p class="name">Chrome</p>
         <p class="type">[EP]</p>
-        <a href="https://youtu.be/J5FPy2MDO2k">youtube</a>
         <a href="https://montehills.bandcamp.com/album/chrome">bandcamp</a>
+        <a href="https://youtu.be/J5FPy2MDO2k">youtube</a>
         <a href="https://open.spotify.com/album/4w49KjxlhIUhsAHyMcWzFh?si=oT4BkpGRS7KODF0KjBkjxw">spotify</a>
         <p class="info">
             <span>2022</span>
@@ -216,13 +237,13 @@
       </div>
     </div> -->
 
-    <div class="square">
+    <div class="square compilation">
       <img src="images/dmatoms.jpg" alt="Drum Machine / All The Other MCs (Remastered & Remixed)">
       <div class="overlay">
         <p class="name">Drum Machine / All The Other MCs (Remastered & Remixed)</p>
         <p class="type">[compilation]</p>
-        <a href="https://youtu.be/J5FPy2MDO2k">youtube</a>
         <a href="https://montehills.bandcamp.com/album/drum-machine-all-the-other-mcs-remastered-remixed">bandcamp</a>
+        <a href="https://youtu.be/J5FPy2MDO2k">youtube</a>
         <a href="https://open.spotify.com/album/42mpRw9wr9PUoOOW46crzz?si=4Ha70C-zRwWxVoYpEbzj-w">spotify</a>
         <p class="info">
             <span>originals 2020 & 2021, remastered 2022</span>
@@ -240,11 +261,12 @@
     
     "Monte hills"
       <div class="links">
-        <a href="https://www.youtube.com/@montehills/">youtube</a>
         <a href="https://montehills.bandcamp.com/">bandcamp</a>
-        <a href="https://open.spotify.com/artist/2uyspNgs3aa2eGr7H1Q8HV?si=vRnGUDWsT2Spop5xpVY6Eg">spotify</a>
+        <a href="https://www.youtube.com/@montehills/">youtube</a>
         <a href="https://x.com/montehillsreal">x the everything app (twitter)</a>
         <a href="https://www.instagram.com/montehillsreal/">instagram</a>
+        <a href="https://open.spotify.com/artist/2uyspNgs3aa2eGr7H1Q8HV?si=vRnGUDWsT2Spop5xpVY6Eg">spotify</a>
+        <a href="https://music.apple.com/artist/monte-hills/1565709028">apple music</a>
       </div>
 </div>
 </body>

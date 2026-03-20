@@ -9,6 +9,14 @@ html, body {
   gap: 0;
 }
 
+form {
+  display:flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0.5em;
+}
+
 .square {
   position: relative;
   flex: 1 1 11cm; 
@@ -113,4 +121,8 @@ a:hover {
     justify-content: space-between;
     flex-wrap: wrap;
     margin: 2em;
+}
+
+.hidden {
+  display: none;
 }
