@@ -12,9 +12,13 @@ html, body {
 form {
   display:flex;
   flex-direction: row;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
-  margin: 0.5em;
+}
+
+form div {
+  padding: 1em;
 }
 
 .square {
