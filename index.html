@@ -10,6 +10,8 @@
   <script src="javascript.js"></script>
 </head>
 <body onload="generateSquares()">
+  
+  <!-- >p class="marquee"><span><b>Kayleigh A. Blossom CDs out now!!!</b></span></p> -->
 
   <form onchange="generateSquares()">
       <div><input type="checkbox" id="albums" name="albums" onchange="toggleAlbums()" checked/>
@@ -38,7 +40,7 @@
   </form>
 
   <div class="grid" >
-    <div class="square album">
+    <div class="square album" data-date="2026-01-23">
       <img src="images/kabalbum.jpg" alt="Kayleigh. A Blossom Album">
       <div class="overlay">
         <p class="name">Kayleigh A. Blossom Album</p>
@@ -53,7 +55,7 @@
       </div>
     </div>
 
-    <div class="square djmix">
+    <div class="square djmix" data-date="2025-08-08">
       <img src="images/skylive25.jpg" alt="LIVE @ Skylive '25 (08/08/25)">
       <div class="overlay">
         <p class="name">LIVE @ Skylive '25 (08/08/25)</p>
@@ -66,7 +68,7 @@
       </div>
     </div>
 
-    <div class="square liveset">
+    <div class="square liveset" data-date="2025-07-20">
       <img src="images/bfabw.jpg" alt="LIVE @ Beats for a Broken World (20/07/25)">
       <div class="overlay">
         <p class="name">LIVE @ Beats for a Broken World (20/07/25)</p>
@@ -79,7 +81,7 @@
       </div>
     </div>
 
-    <div class="square EP" >
+    <div class="square EP" data-date="2025-02-07">
       <img src="images/montehills2.jpg" alt="monte Hills2">
       <div class="overlay">
         <p class="name">monte Hills2</p>
@@ -94,7 +96,7 @@
       </div>
     </div>
 
-    <div class="square djmix">
+    <div class="square djmix" data-date="2025-10-25">
       <img src="images/birthdaymix2k24.jpg" alt="Birthday Mix 2K24">
       <div class="overlay">
         <p class="name">birthday mix 2K24</p>
@@ -120,7 +122,7 @@
       </div>
     </div>
 
-    <div class="square compilation">
+    <div class="square compilation" data-date="2024-09-15">
       <img src="images/intmhwds.jpg" alt="International Monte Hills Week (Deleted Scenes)">
       <div class="overlay">
         <p class="name">International Monte Hills Week (Deleted Scenes)</p>
@@ -134,7 +136,7 @@
       </div>
     </div>
 
-    <div class="square EP collab">
+    <div class="square EP collab" data-date="2024-07-12">
       <img src="images/yanlt.jpg" alt="You Are Now Listening To...">
       <div class="overlay">
         <p class="name">Morning End - You Are Now Listening To...</p>
@@ -149,7 +151,7 @@
       </div>
     </div>
 
-    <div class="square djmix">
+    <div class="square djmix" data-date="2024-06-16">
       <img src="images/skylive24.jpg" alt="LIVE @ Skylive '24 (16/06/24)">
       <div class="overlay">
         <p class="name">LIVE @ Skylive '24 (16/06/24)</p>
@@ -162,7 +164,7 @@
       </div>
     </div>
 
-    <div class="square compilation remix">
+    <div class="square compilation remix" data-date="2024-01-26">
       <img src="images/rbevol1.jpg" alt="Remixes, Bootlegs & Edits Vol. 1">
       <div class="overlay">
         <p class="name">Remixes, Bootlegs & Edits Vol. 1</p>
@@ -177,7 +179,7 @@
       </div>
     </div>
 
-    <div class="square album">
+    <div class="square album" data-date="2023-09-15">
       <img src="images/intmhw.jpg" alt="International Monte Hills Week">
       <div class="overlay">
         <p class="name">International Monte Hills Week</p>
@@ -192,7 +194,7 @@
       </div>
     </div>
 
-    <div class="square single">
+    <div class="square single" data-date="2023-09-01">
       <img src="images/lookgood.jpg" alt="LOOK_GOOD">
       <div class="overlay">
         <p class="name">LOOK_GOOD (feat. Artemis Morte)</p>
@@ -207,7 +209,7 @@
       </div>
     </div>    
 
-    <div class="square single remix">
+    <div class="square single remix" data-date="2023-06-12">
       <img src="images/pmpmhrmx.jpg" alt="Paparazzi Murder Party (Monte Hills Remix)">
       <div class="overlay">
         <p class="name">Vane Lily - Paparazzi Murder Party (Monte Hills Remix)</p>
@@ -222,7 +224,7 @@
       </div>
     </div>
     
-    <div class="square djmix">
+    <div class="square djmix" data-date="2023-06-10">
       <img src="images/skylive23.jpg" alt="LIVE @ Skylive '23 (10/06/23)">
       <div class="overlay">
         <p class="name">LIVE @ Skylive '23 (10/06/23)</p>
@@ -235,7 +237,7 @@
       </div>
     </div>
     
-    <!-- <div class="square">
+    <!-- <div class="square" data-date"2023-04-2">
       <img src="placeholder" alt="Kentucky Man Gets Remixed by Monte Hills">
       <div class="overlay">
         <a href="https://montehills.bandcamp.com/album/kentucky-man-gets-remixed-by-monte-hills">bandcamp</a>
@@ -247,7 +249,7 @@
       </div>
     </div> --> 
 
-    <div class="square single remix">
+    <div class="square single remix" data-date="2022-10-14">
       <img src="images/rbbmhrmx.jpg" alt="Reckless Battery Burns (Monte Hills Remix)">
       <div class="overlay">
         <p class="name">GHOST & Vane Lily - Reckless Battery Burns (Monte Hills Remix)</p>
@@ -262,7 +264,7 @@
       </div>
     </div>
 
-    <div class="square single">
+    <div class="square single" data-date="2022-8-31">
       <img src="images/gottaget.jpg" alt="Gotta Get">
       <div class="overlay">
         <p class="name">Gotta Get</p>
@@ -276,7 +278,7 @@
       </div>
     </div>
 
-    <div class="square EP">
+    <div class="square EP" data-date="2022-05-06">
       <img src="images/chrome.jpg" alt="Chrome">
       <div class="overlay">
         <p class="name">Chrome</p>
@@ -291,7 +293,7 @@
       </div>
     </div>
 
-    <!-- <div class="square">
+    <!-- <div class="square" data-date="2023-12-29">
       <img src="images/dbmreedit.jpg" alt="Digital Bird Matrix (Re-Edit)">
       <div class="overlay">
         <p class="name">Digital Bird Matrix (Re-Edit)</p>
@@ -306,23 +308,23 @@
       </div>
     </div> -->
 
-    <!-- <div class="square">
+    <div class="square" data-date="2021-06-25">
       <img src="images/dbaotd.jpg" alt="Don't be afraid of the dark.">
       <div class="overlay">
         <p class="name">Don't be afraid of the dark.</p>
         <p class="type">[EP]</p>
-        <a href="https://youtu.be/J5FPy2MDO2k">youtube</a>
         <a href="https://montehills.bandcamp.com/album/dont-be-afraid-of-the-dark">bandcamp</a>
+        <a href="https://youtu.be/J5FPy2MDO2k">youtube</a>
         <a href="https://open.spotify.com/album/42mpRw9wr9PUoOOW46crzz?si=4Ha70C-zRwWxVoYpEbzj-w">spotify</a>
         <p class="info">
             <span>2021</span>
             <span>Cockatiel Recordings</span>
         </p>
       </div>
-    </div> -->
+    </div>
 
-    <div class="square compilation">
-      <img src="images/dmatoms.jpg" alt="Drum Machine / All The Other MCs (Remastered & Remixed)">
+    <div class="square compilation" data-date="2022-12-16">
+      <img src="images/dmatoms.jpg" alt="Drum Machine / All The Other MCs (Remastered & Remixed)" >
       <div class="overlay">
         <p class="name">Drum Machine / All The Other MCs (Remastered & Remixed)</p>
         <p class="type">[compilation]</p>
